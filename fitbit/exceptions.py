@@ -88,7 +88,7 @@ def detect_and_raise_error(response):
         raise HTTPConflict(response)
     elif response.status_code == 429:
         exc = HTTPTooManyRequests(response)
-        exc.retry_after_secs = int(response.headers['Retry-After'])
+        exc.retry_after_secs = int(response.headers.get("Retry-After", response.headers.get("retry-after", 3600)))
         raise exc
     elif response.status_code >= 500:
         raise HTTPServerError(response)
