@@ -25,13 +25,3 @@ classifiers = [
 dependencies = [
     "requests-oauthlib"
 ]
-
-[tool.flit.metadata]
-module = "fitbit"
-requires-python = ">=2.7, <4"
-
-[tool.flit.scripts]
-# Add any console scripts here if needed
-
-[tool.flit.metadata]
-description-file = "README.rst"
