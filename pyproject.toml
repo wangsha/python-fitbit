@@ -1,3 +1,37 @@
 [build-system]
 requires = []
-build-backend = "setuptools.build_meta"
+
+[project]
+name = "fitbit"
+description = "Fitbit API Wrapper."
+readme = "README.rst"
+authors = [
+]
+license = "Apache-2.0"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: PyPy"
+]
+dependencies = [
+    "requests-oauthlib"
+]
+
+[tool.flit.metadata]
+module = "fitbit"
+requires-python = ">=2.7, <4"
+
+[tool.flit.scripts]
+# Add any console scripts here if needed
+
+[tool.flit.metadata]
+description-file = "README.rst"
