@@ -1,8 +1,10 @@
 [build-system]
-requires = []
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
 
 [project]
 name = "fitbit"
+version = "0.3.1"
 description = "Fitbit API Wrapper."
 readme = "README.rst"
 authors = [
