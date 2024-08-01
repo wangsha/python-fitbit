@@ -24,7 +24,7 @@ setup(
     packages=['fitbit'],
     package_data={'': ['LICENSE']},
     include_package_data=True,
-    install_requires=["setuptools"] + required,
+    install_requires=["requests-oauthlib"],
     license='Apache 2.0',
     test_suite='fitbit_tests.all_tests',
     tests_require=required_test,
@@ -38,6 +38,8 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Programming Language :: Python :: Implementation :: PyPy'
     ),
 )
